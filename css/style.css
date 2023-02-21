@@ -1,0 +1,22 @@
+.cityBlock {
+    padding: 10px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+#weatherContainer {
+    display: flex;
+}
+
+table, td {
+    border:1px solid;
+}
+
+table {
+    width: 500px;
+}
+
+td {
+   text-align: center;
+}
