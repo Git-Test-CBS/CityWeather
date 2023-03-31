@@ -20,9 +20,7 @@ class WeatherList{
     }
 
     drawList(citiesInfo){
-
         citiesInfo.forEach(cityInfo =>{
-            console.log(cityInfo)
             let cityObject = new cityWeather(cityInfo, this.fElem);
             cityObject.createCityWeather(this.wElem)
 

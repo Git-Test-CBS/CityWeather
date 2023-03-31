@@ -7,7 +7,6 @@ class cityForecast {
     createCityForecast(){
         dataService.getCityForecast(this.cityName)
         .then(result =>{
-            console.log(result);
             this.#drawTable(result)
 
 
@@ -23,13 +22,8 @@ class cityForecast {
 
         let finalList = forecastList.filter(forecast => {
             let date = new Date(forecast.dt * 1000);
-            console.log(date)
             return date.getHours() == 14;
         })
-
-        console.log(finalList)
-
-        console.log(forecastList);
         
         finalList.forEach(data=>{
             let date = new Date(data.dt*1000);
