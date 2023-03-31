@@ -8,8 +8,6 @@ class cityForecast {
         dataService.getCityForecast(this.cityName)
         .then(result =>{
             this.#drawTable(result)
-
-
         })
     }
 
@@ -22,7 +20,7 @@ class cityForecast {
 
         let finalList = forecastList.filter(forecast => {
             let date = new Date(forecast.dt * 1000);
-            return date.getHours() == 14;
+            return date.getHours() >= 12 && date.getHours() < 15;
         })
         
         finalList.forEach(data=>{
