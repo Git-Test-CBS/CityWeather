@@ -18,7 +18,6 @@ class cityWeather {
     }
 
     addButtonEvent(cityElement){
-        console.log(cityElement)
         let forecastBtn = cityElement.querySelector(".forecast_btn");
         let forecastElem = this.forecastElem;
         let cityName = this.cityObject.name;
