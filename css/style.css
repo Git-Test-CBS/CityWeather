@@ -20,3 +20,8 @@ table {
 td {
    text-align: center;
 }
+
+h1 {
+    font-family: Arial;
+    text-shadow: 2px 2px 3px #000;
+}
